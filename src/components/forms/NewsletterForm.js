@@ -1,42 +1,50 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import classnames from 'classnames';
 
-class NewsletterForm extends Component {
-	constructor(props) {
-		super(props);
-		this.state = { email: '' };
-	}
+const axios = require('axios');
 
-	render() {
-		const { className, submit = 'Submit' } = this.props;
-		const { email } = this.state;
+const submitForm = (userDetails) => {
+	axios({
+		method: 'post',
+		url: 'https://enosma80mufp0jp.m.pipedream.net',
+		data: {
+			userDetails,
+		},
+	});
+};
 
-		return (
-			<form
-				className={classnames(
-					'newsletter-form field field-grouped is-revealing',
-					className
-				)}
-			>
-				<div className="control control-expanded">
-					<input
-						className="input"
-						type="email"
-						name="email"
-						placeholder="Your best email&hellip;"
-					/>
-				</div>
-				<div className="control">
-					<button
-						className="button button-primary button-block button-shadow"
-						type="submit"
-					>
-						{submit}
-					</button>
-				</div>
-			</form>
-		);
-	}
+function NewsletterForm(props) {
+	const { className, submit = 'Submit' } = props;
+	const [firstName, setFirstName] = useState('');
+	const [lastName, setLastName] = useState('');
+	const [email, setEmail] = useState('');
+
+	return (
+		<form
+			className={classnames(
+				'newsletter-form field field-grouped is-revealing',
+				className
+			)}
+		>
+			<div className="control control-expanded">
+				<input
+					className="input"
+					type="email"
+					name="email"
+					placeholder="Your best email&hellip;"
+				/>
+			</div>
+			<div className="control">
+				<button
+					className="button button-primary button-block button-shadow"
+					type="submit"
+					onClick={() => submitForm({ firstName, lastName, email })}
+				>
+					Register Interest
+				</button>
+			</div>
+		</form>
+	);
 }
 
 export default NewsletterForm;
