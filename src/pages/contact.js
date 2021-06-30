@@ -14,7 +14,12 @@ export default function ContactPage() {
 								</header>
 
 								<div className="entry-body">
-									<p>Add your contact information here.</p>
+									<p>
+										For any questions or more information, email{' '}
+										<a href="mailto:asin473@aucklanduni.ac.nz">
+											<b>Adam Sinclair.</b>
+										</a>
+									</p>
 								</div>
 							</div>
 						</div>

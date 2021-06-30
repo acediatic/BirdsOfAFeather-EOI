@@ -14,7 +14,7 @@ export default function Footer() {
 			<div className="container">
 				<div className="site-footer-inner">
 					<NavLinks className="footer-links" />
-					<SocialLinks className="footer-social-links" />
+					{/* <SocialLinks className="footer-social-links" /> */}
 					<div className="footer-copyright">{getCopyright()}</div>
 				</div>
 			</div>

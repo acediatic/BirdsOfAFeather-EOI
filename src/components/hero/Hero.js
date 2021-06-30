@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { setupScrollReveal } from '../../assets/js/main.js';
 
-import NewsletterForm from '../forms/NewsletterForm';
+import EoIForm from '../forms/EoIForm';
 
 class Hero extends Component {
 	componentDidMount() {
@@ -23,7 +23,7 @@ class Hero extends Component {
 								<p className="hero-paragraph is-revealing">{content}</p>
 							</div>
 
-							<NewsletterForm className="hero-form" submit="Get early access" />
+							<EoIForm className="hero-form" submit="Get early access" />
 						</div>
 
 						<div className="hero-illustration">

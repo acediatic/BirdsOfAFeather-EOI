@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import swal from 'sweetalert';
 
 const axios = require('axios');
@@ -67,7 +67,7 @@ const submitForm = (userDetails) => {
 	}
 };
 
-function NewsletterForm(props) {
+function EoIForm(props) {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
@@ -127,4 +127,4 @@ function NewsletterForm(props) {
 	);
 }
 
-export default NewsletterForm;
+export default EoIForm;
