@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SocialLinks from './SocialLinks';
 import NavLinks from './NavLinks';
 
 function getCopyright() {

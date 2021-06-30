@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 export default function NavLinks({ className }) {
 	const links = [
+		{ text: 'Home', href: '/' },
 		{ text: 'About Us', href: '/about' },
 		{ text: 'Contact', href: '/contact' },
 	];

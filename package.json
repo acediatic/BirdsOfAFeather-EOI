@@ -1,8 +1,8 @@
 {
-  "name": "holly_react",
+  "name": "Boaf-EoI",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lukemcdonald.github.io/holly-react",
+  "homepage": "https://acediatic.github.io/birds-of-a-feather",
   "scripts": {
     "build-css": "node-sass-chokidar src/assets/css/scss/style.scss -o src/assets/css",
     "build-js": "react-scripts build",

@@ -15,23 +15,11 @@ export default function AboutPage() {
 
 								<div className="entry-body">
 									<p>
-										Holly is a free HTML/CSS landing page designed and developed
-										by @pacovitiello and @DavidePacilio!
+										Here we'd have some information about the club and what
+										we're doing.
 									</p>
-									<p>
-										Holly is suitable for all kind of startups, it's easily
-										customizable, and it's downloadable for personal and
-										commercial use.
-									</p>
+									<p>That way, people know what we're doing.</p>
 									<hr />
-									<p>
-										Live demo:{' '}
-										<a href="https://demo.cruip.com/holly/">
-											https://demo.cruip.com/holly/
-										</a>
-									</p>
-									<hr />
-									<p>This template is distributed under the MIT License.</p>
 								</div>
 							</div>
 						</div>
