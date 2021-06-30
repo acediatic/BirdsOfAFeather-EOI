@@ -3,6 +3,11 @@ import React from 'react';
 import SocialLinks from './SocialLinks';
 import NavLinks from './NavLinks';
 
+function getCopyright() {
+	const year = new Date(Date.now()).getFullYear();
+	return `© ${year} Birds of a Feather, all rights reserved`;
+}
+
 export default function Footer() {
 	return (
 		<footer className="site-footer text-light">
@@ -10,9 +15,7 @@ export default function Footer() {
 				<div className="site-footer-inner">
 					<NavLinks className="footer-links" />
 					<SocialLinks className="footer-social-links" />
-					<div className="footer-copyright">
-						&copy; 2018 Holly, all rights reserved
-					</div>
+					<div className="footer-copyright">{getCopyright()}</div>
 				</div>
 			</div>
 		</footer>
