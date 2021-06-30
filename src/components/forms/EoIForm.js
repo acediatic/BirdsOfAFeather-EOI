@@ -50,6 +50,7 @@ const submitForm = (userDetails) => {
 	const cleanedUserDetails = { firstName, lastName, email };
 	const isValidSubmission = formValidation(cleanedUserDetails);
 
+	// submit data to Pipedream.
 	if (isValidSubmission) {
 		axios({
 			method: 'post',
