@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 
+import boafLogo from '../../assets/images/boaf-logo.png';
+
 export default function HeroIllustration() {
 	return (
 		<>
@@ -182,8 +184,12 @@ export default function HeroIllustration() {
 					/>
 				</svg>
 			</div>
-			<div className="hero-illustration-browser is-revealing">
-				<svg
+			<div
+				className="hero-illustration-browser is-revealing"
+				style={{ width: 800, height: 450 }}
+			>
+				<img src={boafLogo} alt="boaf logo" />
+				{/* <svg
 					width="800"
 					height="450"
 					viewBox="0 0 800 450"
@@ -437,7 +443,7 @@ export default function HeroIllustration() {
 							/>
 						</g>
 					</g>
-				</svg>
+				</svg> */}
 			</div>
 			<div className="hero-ball hero-ball-3 is-revealing">
 				<svg
