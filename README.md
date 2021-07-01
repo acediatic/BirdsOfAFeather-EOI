@@ -1,6 +1,6 @@
 # Birds of a Feather Landing Site
 
-For the live site, see [here]([https://acediatic.github.io/BirdsOfAFeather-EOI/#/)
+For the live site, see [here](https://acediatic.github.io/BirdsOfAFeather-EOI/#/)
 
 ## Credits
 
